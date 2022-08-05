@@ -12,7 +12,7 @@ class ProdutoController extends Controller
 
         $produtos = DB::select('SELECT * FROM produtos');
 
-        return view('listagem')->with('produtos', $produtos);
+        return view('listagem')->withProdutos($produtos);
         
     }
 }
