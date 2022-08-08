@@ -2,10 +2,10 @@
 <html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de estoque</title>
-    <link href="/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 </head>
 <body> 
     <div class="container">
@@ -19,12 +19,16 @@
             <td><?= $p->descricao ?></td>
             <td><?= $p->quantidade ?></td>
             <td>
-                <a href="/produtos/mostra/<?= $p->nome ?>">visualizar</a>
+                <a href="/produtos/mostra?id=<?= $p->id ?>">
+                    <span class = "glyphicon glyphicon-search"></sapn>
+                </a>
+
             </td>
         </tr>
         <?php endforeach ?>
         </table>
 
     </div>
+    <script src="/js/app.js"></script>
 </body>
 </html>
