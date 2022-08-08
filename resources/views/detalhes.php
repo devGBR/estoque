@@ -11,15 +11,15 @@
     
     <div class="container">
         <h1>Detalhes do Produto: <?= $p->nome ?></h1>
-            <ul class = "list-group list-group-flush">
-                <li>
-                    <b>Valor:</b> <?= $p->valor ?>
+            <ul class = " list-group-flush">
+                <li class="list-group-item">
+                    <b>Valor:</b> <br> <?= $p->valor ?>
                 </li>
-                <li>
-                    <b>Descrição:</b> <?= $p->descricao ?>
+                <li class="list-group-item">
+                    <b>Descrição:</b> <br> <?= $p->descricao ?>
                 </li>
-                <li>
-                    <b>Quantidade em estoque:</b> <?= $p->quantidade ?>
+                <li class="list-group-item">
+                    <b>Quantidade em estoque:</b> <br> <?= $p->quantidade ?>
                 </li>
             </ul>
     </div>
