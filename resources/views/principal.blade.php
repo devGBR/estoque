@@ -3,7 +3,6 @@
     <head>
         <title>Controle de estoque</title>
         <link rel="stylesheet" href="/css/app.css">
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
             <style>
                  #title{
                     position: relative;
