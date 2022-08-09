@@ -16,7 +16,7 @@ class ProdutoController extends Controller
 
     public function mostra(){
 
-        $id = Request::route('id', '0');
+        $id = Request::route('id');
 
         $produto = DB::select('SELECT * FROM produtos WHERE id = ?', [$id]);
         if(empty($produto)){
