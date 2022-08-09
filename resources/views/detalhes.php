@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/app.css">
     <title>Detalhe do Produto: <?= $p->nome ?></title>
+    <style>
+         #title{
+            position: relative;
+            left: 11%;  
+         }
+    </style>
 </head>
 <body>
     
     <div class="container">
-        <h1>Detalhes do Produto: <?= $p->nome ?></h1>
+        <h1  id = "title">Detalhes do Produto: <?= $p->nome ?></h1>
             <ul class = " list-group-flush">
                 <li class="list-group-item">
                     <b>Valor:</b> <br> <?= $p->valor ?>

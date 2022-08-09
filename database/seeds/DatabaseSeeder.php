@@ -43,5 +43,11 @@ class ProdutoTableSeeder extends Seeder
          values (?,?,?,?)',
          array('Microondas', 1, 1520.00, 
          'Manda SMS quando termina de esquentar'));
+
+       DB::insert('insert into produtos
+       (nome, quantidade, valor, descricao)
+       values (?,?,?,?)',
+       array('Geladeira', 4, 10000.00, 
+       'Congelador com gelo na porta'));  
     }
 }
