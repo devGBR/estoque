@@ -10972,6 +10972,17 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+  .label {
+    background-color: red;
+    color: white;
+    font-style: bold;
+    font-size: 1.2em;
+    padding: 0.2em 0.6em;
+  }
+  .pull-right {
+    float: right;
+    position: absolute;
+  }
 
 }
 

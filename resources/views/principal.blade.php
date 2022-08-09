@@ -8,6 +8,14 @@
                     position: relative;
                     left: 11%;  
                  }
+                 .label {
+                    background-color: red;
+                    color: white;
+                    font-style: bold;
+                    font-size: 1.2em;
+                    padding: 0.2em 0.6em;
+                    border-radius: 0.5em;
+                     }
             </style>
     </head>
         <body>
