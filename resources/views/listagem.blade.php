@@ -3,7 +3,7 @@
 @section('conteudo')
         <h1>Listagem de produtos</h1>
         <table class="table table-hover table-bordered table-striped">
-            <?php foreach ($produtos as $p): ?>
+            @forelse($produtos as $p): 
         <tr>
             <td>{{$p->nome}}</td>
             <td>{{$p->valor}}</td>
@@ -13,10 +13,13 @@
                 <a href="/produtos/mostra/<?= $p->id ?>">
                     <span class = "glyphicon glyphicon-search"></sapn>
                 </a>
-
             </td>
+            @empty
+                <tr>
+                    <td colspan="500">Nenhum produto cadastrado</td>
+                </tr>
         </tr>
-        <?php endforeach ?>
+        @endforelse
         </table>
 
 @stop
