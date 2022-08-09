@@ -5659,8 +5659,12 @@ a.badge-dark.focus {
 
 .alert-danger {
   color: #761b18;
+  font-size: 15px;
   background-color: #f9d6d5;
   border-color: #f7c6c5;
+  position: absolute;
+  top: 3%;
+  width: 70%;
 }
 
 .alert-danger hr {
