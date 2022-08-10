@@ -1,0 +1,50 @@
+   #title{
+       position: relative;
+       left: 11%;  
+    }
+
+   .label {
+      background-color: red;
+      color: white;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding: 0.2em 0.6em;
+      border-radius: 0.5em;
+       }
+
+   .pull-right {
+      float: right;
+      position: absolute;
+      left: 1032px;
+      }
+        
+   nav.navbar.navbar-default{
+      background-color: #337ab7;
+      border-color: #2e6da4;
+      border-radius: 5px;
+      margin-top: 10px;
+      height: 50px;
+      }
+
+   nav.navbar.navbar-default a {
+      color: white;
+      }
+
+   li p.navbar-text, a.navbar-brand {
+      color: white!important;
+      font-weight: bolder;
+      font-size: 1.2em;
+      }
+
+      footer.footer {
+      background-color: #337ab7;
+      border-color: #2e6da4;
+      margin-top: 55px;
+      color: white;
+      border-radius: 5px;
+      }
+
+      footer.footer p {
+      padding: 10px;
+      }

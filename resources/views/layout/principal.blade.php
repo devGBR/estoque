@@ -3,32 +3,35 @@
     <head>
         <title>Controle de estoque</title>
         <link rel="stylesheet" href="/css/app.css">
-            <style>
-                 #title{
-                    position: relative;
-                    left: 11%;  
-                 }
-                 .label {
-                    background-color: red;
-                    color: white;
-                    padding: 5px;
-                    font-weight: bold;
-                    font-size: 1.2em;
-                    padding: 0.2em 0.6em;
-                    border-radius: 0.5em;
-                     }
-                     .pull-right {
-                        float: right;
-                        position: absolute;
-                        left: 1060px;
-                        }
-            </style>
+        <link rel="stylesheet" href="/css/styleadc.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     </head>
         <body>
 
             <div class="container">
 
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+
+                        <a class="navbar-brand" href="/produtos">
+                            GETQ-ESTOQUE
+                        </a> 
+
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href = "/produtos">Listagem</a></li>
+                    </ul>
+
+                </div>
+            </nav>
                 @yield('conteudo')
+
+                <footer class = "footer">
+                    <p> &copy; Gerenciador de estoque - GETQ</p>
+                </footer>
 
             </div>
 
