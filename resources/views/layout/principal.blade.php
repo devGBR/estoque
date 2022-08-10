@@ -11,11 +11,17 @@
                  .label {
                     background-color: red;
                     color: white;
-                    font-style: bold;
+                    padding: 5px;
+                    font-weight: bold;
                     font-size: 1.2em;
                     padding: 0.2em 0.6em;
                     border-radius: 0.5em;
                      }
+                     .pull-right {
+                        float: right;
+                        position: absolute;
+                        left: 1060px;
+                        }
             </style>
     </head>
         <body>

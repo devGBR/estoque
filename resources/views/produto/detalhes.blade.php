@@ -1,4 +1,4 @@
- @extends('principal')
+ @extends('layout.principal')
   
   <title>Detalhes do Produto: {{$p->nome}} </title>
 
