@@ -21,7 +21,7 @@
 
                     </div>
 
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right nav-label">
                         <li><a href = "/produtos">Listagem</a></li>
                     </ul>
 
