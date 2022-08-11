@@ -23,6 +23,7 @@
 
                     <ul class="nav navbar-nav navbar-right nav-label">
                         <li><a href = "/produtos">Listagem</a></li>
+                        <li><a href = "/produtos/novo"> Adicionar produto</a></li>
                     </ul>
 
                 </div>

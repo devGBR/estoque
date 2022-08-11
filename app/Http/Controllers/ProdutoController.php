@@ -28,6 +28,14 @@ class ProdutoController extends Controller
     public function novo(){
 
         return view('produto.formulario');
-        
+
+    }
+
+    public function adiciona(){
+
+        $nome = Requets::input('nome');
+        $descricao = Requets::input('descricao');
+        $valor = Requets::input('valor');
+        $quantidade = Requets::input('quantidade');
     }
 }
