@@ -10,7 +10,7 @@
 
             <h1>Listagem de produtos</h1>
                 <table class="table table-hover table-bordered table-striped">
-                    @foreach ($produtos as $p): 
+                    @foreach ($produtos as $p) 
                         <tr class = "{{$p->quantidade <= 1 ? 'table-danger' : ''}}">
                             <td>{{$p->nome}}</td>
                             <td>{{$p->valor}}</td>
@@ -25,9 +25,13 @@
                     @endforeach
             </table>
         @endif
-        <h4>
-            <span class = "label pull-right">
-                Um ou menos itens no estoque
-            </span>
-        </h4>
+        @foreach ($produtos as $p)
+        @if($p->quantidade <= 1)
+            <h4>
+                <span class = "label pull-right">
+                    Um ou menos itens no estoque
+                </span>
+            </h4>
+        @endif
+        @endforeach
 @stop

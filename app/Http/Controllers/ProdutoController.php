@@ -4,6 +4,7 @@ namespace estoque\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Request;
 
+
 class ProdutoController extends Controller
 {
     public function lista(){ 
@@ -33,9 +34,23 @@ class ProdutoController extends Controller
 
     public function adiciona(){
 
-        $nome = Requets::input('nome');
-        $descricao = Requets::input('descricao');
-        $valor = Requets::input('valor');
-        $quantidade = Requets::input('quantidade');
+        $nome = Request::input('nome');
+        $descricao = Request::input('descricao');
+        $valor = Request::input('valor');
+        $quantidade = Request::input('quantidade'); ?>
+
+        <?php if(!empty($nome)){
+            DB::insert('insert into produtos(nome, descricao, valor, quantidade) values(?,?,?,?)', array($nome, $descricao, $valor, $quantidade))?>
+            <div class="alert alert-success">
+                <strong>Sucesso!</strong> Produto adicionado.
+            </div>
+        <?php } 
+            else{?>
+            <div class="alert al-danger">
+                <strong>Erro!</strong> Preencha todos os campos.
+            </div>
+        <?php }
+
+        return view('produto.formulario'); 
     }
 }

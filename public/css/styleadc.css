@@ -43,6 +43,7 @@
          margin-top: 55px;
          color: white;
          border-radius: 5px;
+         width: 99.5%;
    }
 
    footer.footer p {
@@ -54,3 +55,31 @@
          
          color: white;
       }
+
+   .new{
+     
+      position: absolute;
+      right: 80px;
+      top: 14px;
+
+   }
+   .al-danger{
+      color: #761b18;
+      font-size: 15px;
+      background-color: #f9d6d5;
+      border-color: #f7c6c5;
+      text-align: center;
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   input[type=text], input[type=number] {
+      font-size: 14px;
+   } 
+   .btn-style{
+      background-color: #337ab7;
+      color: white;
+      font-size: 1.2em;
+      padding: 0.2em 0.6em;
+      border-radius: 0.5em;
+   }

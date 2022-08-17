@@ -3,29 +3,29 @@
  @section('conteudo')
     <h1> Cadastre novo produto</h1>
     
-        <form> 
+        <form action = "/produtos/adiciona"> 
     
             <div class="form-group">
                 <label>Nome</label>
-                <input name = "nome" class="form-control">
+                <input type ="text" name = "nome" class="form-control">
             </div>
 
             <div class="form-group">
-                <label>Descricao</label>
-                <input name = "descricao " class="form-control">
+                <label>Descrição</label>
+                <input type ="text" name = "descricao" class="form-control">
             </div>
 
             <div class="form-group">
                 <label>Valor</label>
-                <input name = "valor" class = "form-control">
+                <input type ="text" name = "valor" class = "form-control">
             </div>
             
             <div class="form-group">
                 <label>Quantidade</label>
-                <input name = "quantidade" type = "number" class = "form-control">
+                <input type = "number" name = "quantidade" class = "form-control">
             </div>
 
-            <button type = "Submit" class="btn
+            <button type = "Submit" class="btn btn-style
                 btn-primary btn-block">Adicionar</button>
 
         </form>
