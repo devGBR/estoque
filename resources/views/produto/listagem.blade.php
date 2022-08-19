@@ -13,7 +13,7 @@
                     @foreach ($produtos as $p) 
                         <tr class = "{{$p->quantidade <= 1 ? 'table-danger' : ''}}">
                             <td>{{$p->nome}}</td>
-                            <td>{{$p->valor}}</td>
+                            <td> R$ {{$p->valor}}</td>
                             <td>{{$p->descricao}}</td>
                             <td>{{$p->quantidade}}</td>
                             <td>
@@ -34,4 +34,9 @@
             </h4>
         @endif
         @endforeach
+        @if(old('nome'))
+        <div class="alert alert-success">
+                <strong>Sucesso!</strong> O produto {{ old('nome') }}  foi adicionado com sucesso.
+        </div>
+        @endif
 @stop

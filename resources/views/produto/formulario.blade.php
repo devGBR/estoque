@@ -3,8 +3,8 @@
  @section('conteudo')
     <h1> Cadastre novo produto</h1>
     
-        <form action = "/produtos/adiciona"> 
-    
+        <form method = "post"> 
+            @csrf
             <div class="form-group">
                 <label>Nome</label>
                 <input type ="text" name = "nome" class="form-control">
@@ -30,4 +30,16 @@
 
         </form>
     </div>
+     
+     <div class = "max-width mt-5">
+       
+       @if($errors->any())
+            <div class="alert al-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                    @endforeach
+              </ul>
+            </div>
+        @endif
  @stop

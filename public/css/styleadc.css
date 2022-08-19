@@ -83,3 +83,16 @@
       padding: 0.2em 0.6em;
       border-radius: 0.5em;
    }
+   .error-message {
+      background: white;
+      color: black;
+      text-align: center;
+      list-style-type: none;
+      width: 40%;
+      border-radius: 12px;
+      position: relative;
+      left: 20px;
+      animation-name: example;
+      animation-duration: 4s;
+      margin: 0 auto;
+   }
