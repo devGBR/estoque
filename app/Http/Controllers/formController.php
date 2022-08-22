@@ -4,6 +4,7 @@ namespace estoque\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class formController extends ProdutoController
 {
     public function adc(Request $request) {
@@ -16,7 +17,7 @@ class formController extends ProdutoController
 
         $this->adiciona();
 
-        return redirect('/produtos')->withInput();
+        return redirect()->action('ProdutoController@lista')->withInput($request->only('nome'));
     }
 
     
