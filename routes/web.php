@@ -19,3 +19,6 @@ Route::get('/produtos/novo', 'ProdutoController@novo');
 
 Route::post('/produtos/novo', 'formController@adc');
 
+Route::get('/produtos/json', 'ProdutoController@listaJson');
+
+Route::get('/produtos/remove/{id}', 'ProdutoController@remove');

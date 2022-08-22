@@ -3,6 +3,8 @@
 namespace estoque\Http\Controllers;
 
 use Illuminate\Http\Request;
+use estoque\Produto;
+use Illuminate\Support\Facades\DB;
 
 
 class formController extends ProdutoController
@@ -15,7 +17,7 @@ class formController extends ProdutoController
             'quantidade' => 'required|numeric'
         ]);
 
-        $this->adiciona();
+        Produto::create($request->all());
 
         return redirect()->action('ProdutoController@lista')->withInput($request->only('nome'));
     }

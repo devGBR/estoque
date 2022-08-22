@@ -96,3 +96,9 @@
       animation-duration: 4s;
       margin: 0 auto;
    }
+   .lixeira{
+      position: absolute;
+      right: 160px;
+      top: 14px
+
+   }

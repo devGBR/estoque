@@ -4,7 +4,10 @@
     <h1> Cadastre novo produto</h1>
     
         <form method = "post"> 
+
             @csrf
+
+
             <div class="form-group">
                 <label>Nome</label>
                 <input type ="text" name = "nome" class="form-control">
