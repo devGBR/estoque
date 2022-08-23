@@ -1,7 +1,15 @@
  @extends('layout.principal')
-
+    
  @section('conteudo')
     <h1> Cadastre novo produto</h1>
+
+     <div class = "alert ale-danger">
+
+            <span class = "glyphicon glyphicon-warning-sign atention"></span>
+             <br>
+           <p class = "pgf"> Os campos Quantidade e Valor devem ser preenchidos <br> com numeros positivos </p>
+              
+         </div>
     
         <form method = "post"> 
 
@@ -10,22 +18,22 @@
 
             <div class="form-group">
                 <label>Nome</label>
-                <input type ="text" name = "nome" class="form-control">
+                <input type ="text" name = "nome" class="form-control" value = "{{old('nome')}}">
             </div>
 
             <div class="form-group">
                 <label>Descrição</label>
-                <input type ="text" name = "descricao" class="form-control">
+                <input type ="text" name = "descricao" class="form-control" value = "{{old('descricao')}}">
             </div>
 
             <div class="form-group">
                 <label>Valor</label>
-                <input type ="text" name = "valor" class = "form-control">
+                <input type ="text" name = "valor" class = "form-control" value = "{{old('valor')}}">
             </div>
             
             <div class="form-group">
                 <label>Quantidade</label>
-                <input type = "number" name = "quantidade" class = "form-control">
+                <input type = "number" name = "quantidade" class = "form-control" value = "{{old('quantidade')}}">
             </div>
 
             <button type = "Submit" class="btn btn-style
@@ -45,4 +53,5 @@
               </ul>
             </div>
         @endif
+     </div>
  @stop

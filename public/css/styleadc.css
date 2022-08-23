@@ -109,3 +109,31 @@
       width: 60px;
       
    }
+   .ale-danger{
+      color: #070707;
+      font-size: 15px;
+      background-color: #f7ff0a;
+      border-color: #d9ed46;
+      text-align: left;
+      width: 160px;
+      height: 180px;
+      position: absolute;
+      left: 1310px;
+      top: 10px;
+      float: left;
+   }
+
+   .atention{
+      position: relative;
+      left: 17px;
+      font-size: 30px;
+   }
+
+.pgf{
+   position: absolute;
+   float: right;
+   text-align: right;
+   right: 10px;
+   top: 23px;
+
+}

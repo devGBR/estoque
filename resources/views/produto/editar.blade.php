@@ -2,6 +2,15 @@
 
  @section('conteudo')
     <h1> Editar Produto: {{$p->nome}}</h1>
+     
+
+        <div class = "alert ale-danger">
+
+            <span class = "glyphicon glyphicon-warning-sign atention"></span>
+             <br>
+           <p class = "pgf"> Os campos Quantidade e Valor devem ser preenchidos <br> com numeros positivos </p>
+              
+         </div>
     
         <form method = "post"> 
 
@@ -45,5 +54,5 @@
               </ul>
             </div>
         @endif
-        
+       </div>
  @stop
