@@ -29,15 +29,7 @@
                         <li>
                             <a href = "{{action('ProdutoController@novo')}}"> Novo </a>
                         </li>
-                        @if(route::get('/produtos/mostra/{id}', 'ProdutoController@mostra'))
-                            <li>
-                                <a href = '/produtos/remove/<?= $p->id ?>' class = "lixeira">
-                                        <span class = "glyphicon glyphicon-trash"></span>
-                                </a>
-                            </li>
-                        @endif
                     </ul>
-
                 </div>
             </nav>
                 @yield('conteudo')

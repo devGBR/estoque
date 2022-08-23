@@ -42,5 +42,12 @@ class ProdutoController extends Controller
         $produto->delete();
         return redirect()->action('ProdutoController@lista'); 
     }
+
+    public function editar($id){
+
+        $produto = Produto::find($id); 
+
+        return view('produto.editar')->with('p', $produto);
+    }
         
 }

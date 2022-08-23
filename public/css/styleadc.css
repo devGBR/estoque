@@ -97,8 +97,15 @@
       margin: 0 auto;
    }
    .lixeira{
-      position: absolute;
-      right: 160px;
-      top: 14px
+      position: relative;
+      left: 1030px;
+      top: 70px;
 
+   }
+   .editar{
+      position: relative;
+      left: 950px;
+      top: 47px;
+      width: 60px;
+      
    }

@@ -39,9 +39,15 @@
             </h4>
         @endif
         @endforeach
+        @if (old('quantidade'))
+            <div class="alert alert-success">
+                <strong>Sucesso!</strong> O produto foi alterado com sucesso.
+        </div>
+        @endif
         @if(old('nome'))
         <div class="alert alert-success">
                 <strong>Sucesso!</strong> O produto {{ old('nome') }}  foi adicionado com sucesso.
         </div>
         @endif
+        
 @stop
