@@ -1,16 +1,20 @@
- @extends('layout.principal')
+ @extends('layouts.app')
 
- @section('conteudo')
-    <h1> Editar Produto: {{$p->nome}}</h1>
+ @section('content')
+ <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                <div class="card-header"><h1> Editar Produto: {{$p->nome}}</h1></div>
      
+        <div class="card-body">
+            <div class = "alert ale-danger">
 
-        <div class = "alert ale-danger">
-
-            <span class = "glyphicon glyphicon-warning-sign atention"></span>
-             <br>
-           <p class = "pgf"> Os campos Quantidade e Valor devem ser preenchidos <br> com numeros positivos </p>
+                <span class = "glyphicon glyphicon-warning-sign atention"></span>
+                <br>
+                <p class = "pgf"> Os campos Quantidade e Valor devem ser preenchidos <br> com numeros positivos </p>
               
-         </div>
+            </div>
     
         <form method = "post"> 
 
@@ -54,5 +58,10 @@
               </ul>
             </div>
         @endif
-       </div>
+           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
  @stop

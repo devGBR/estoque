@@ -1,11 +1,12 @@
- @extends('layout.principal')
+ @extends('layouts.app')
   
   <title>Detalhes do Produto: {{$p->nome}} </title>
 
- @section('conteudo') 
+ @section('content') 
+        <div class = "container">
 
-        <h1  id = "title">Detalhes do Produto: {{$p->nome}}</h1>
-            <ul class = " list-group-flush">
+        <h1  class = "title">Detalhes do Produto: {{$p->nome}}</h1>
+            <ul class = " list-group-flush lista">
                 <li class="list-group-item">
                     <b>Valor:</b> <br> R$ {{$p->valor}}
                 </li>
@@ -18,16 +19,15 @@
             </ul>
 
             <ul class = "nav navbar-nav navbar-right nav-label">
-                <li>
-                    <a href = '/produtos/remove/<?= $p->id ?>' class = "lixeira">
-                        <span class = "glyphicon glyphicon-trash"></span> Excluir
-                    </a>
-                </li>
-                </li>
+                <li> 
                     <a href = '/produtos/alterar/<?= $p->id ?>' class = 'editar'>
                         <span class = "glyphicon glyphicon-pencil"></span> Editar
                     </a>
-                </li>        
+                    <a href = '/produtos/remove/<?= $p->id ?>' class = "lixeira">
+                        <span class = "glyphicon glyphicon-trash"></span> Excluir
+                    </a>
+                </li>       
             </ul>
+        </div>
 @stop
 

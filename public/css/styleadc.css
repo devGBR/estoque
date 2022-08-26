@@ -32,7 +32,7 @@
       }
 
    li p.navbar-text, a.navbar-brand {
-         color: white!important;
+         color: rgb(7, 7, 7)!important;
          font-weight: bolder;
          font-size: 1.2em;
       }
@@ -98,14 +98,12 @@
    }
    .lixeira{
       position: relative;
-      left: 1030px;
-      top: 70px;
+      left: 937px;
 
    }
    .editar{
       position: relative;
-      left: 950px;
-      top: 47px;
+      left: 910px;
       width: 60px;
       
    }
@@ -118,7 +116,7 @@
       width: 160px;
       height: 180px;
       position: absolute;
-      left: 1310px;
+      left: 750px;
       top: 10px;
       float: left;
    }
@@ -136,4 +134,22 @@
    right: 10px;
    top: 23px;
 
+}
+.new{
+   left: 50px;
+   top: 25px;
+   height: 17px;
+   width: 30px;
+   transition: 1s; 
+   cursor: pointer;
+
+}
+.list{
+   left: 14px;
+   transition: 1s; 
+   cursor: pointer;
+}
+.conta{
+   position: relative;
+   right: 10px;
 }

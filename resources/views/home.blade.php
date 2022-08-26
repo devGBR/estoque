@@ -1,8 +1,14 @@
 @extends('layouts.app')
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
-        @if(empty($produtos))
+                <div class="card-body">
+                     @if(empty($produtos))
             <div class="alert alert-danger">
                 Você não tem nenhum produto cadastrado.
             </div>
@@ -49,5 +55,9 @@
                 <strong>Sucesso!</strong> O produto {{ old('nome') }}  foi adicionado com sucesso.
         </div>
         @endif
-        
-@stop
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
