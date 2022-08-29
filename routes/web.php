@@ -29,7 +29,7 @@ Route::post('/produtos/alterar/{id}', 'formController@alterar');
 
 Route::resource('auth', 'Auth\VerificationController');
 
-Route::resource('password', 'Auth\PasswordController');
+Route::resource('password', 'Auth\ForgotPasswordController');
 
 Auth::routes();
 

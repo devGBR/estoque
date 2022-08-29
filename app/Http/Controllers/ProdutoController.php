@@ -11,10 +11,16 @@ use estoque\Produto;
 class ProdutoController extends Controller
 {
     public function lista(){ 
+        
+        if(\Auth::guest()){
+            $produtos = Produto::all();
+
+            return view('produto.listagem')->withProdutos($produtos);
+        }    
 
         $produtos = Produto::all();
 
-        return view('produto.listagem')->withProdutos($produtos);
+        return view('home')->withProdutos($produtos);
         
     }
 
@@ -52,7 +58,7 @@ class ProdutoController extends Controller
 
     public function __construct(){
 
-        $this->middleware('nosso-middleware');
+        $this->middleware('auth',[ 'only' => ['adiciona', 'remove']]);
     }
         
 }
