@@ -27,9 +27,10 @@ Route::get('/produtos/alterar/{id}', 'ProdutoController@editar');
 
 Route::post('/produtos/alterar/{id}', 'formController@alterar');
 
-Route::resource('auth', 'Auth\AuthController');
+Route::resource('auth', 'Auth\VerificationController');
 
 Route::resource('password', 'Auth\PasswordController');
+
 Auth::routes();
 
 Route::get('/home', 'ProdutoController@lista')->name('home');

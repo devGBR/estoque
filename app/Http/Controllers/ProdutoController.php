@@ -49,5 +49,10 @@ class ProdutoController extends Controller
 
         return view('produto.editar')->with('p', $produto);
     }
+
+    public function __construct(){
+
+        $this->middleware('nosso-middleware');
+    }
         
 }
